@@ -26,8 +26,16 @@ include('includes/navbar.php');
               <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total Registered Admin</div>
               <div class="h5 mb-0 font-weight-bold text-gray-800">
 
-               <h4>Total Admin: *</h4>
-
+       <!-- ---------------total admin show ------------------------ -->
+               <h4>Total Admin:  <?php 
+              $conn= mysqli_connect("localhost","root","","adminpanel");
+              $que="SELECT * from register1";
+              $result=mysqli_query($conn,$que);
+              $row=mysqli_num_rows($result);
+              echo $row;
+              
+              ?></h4>
+ <!-- ---------------total admin show end------------------------ -->
               </div>
             </div>
             <div class="col-auto">
