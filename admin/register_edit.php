@@ -22,7 +22,7 @@ $reault=mysqli_query($conn,$que);
 $row=mysqli_fetch_assoc($reault);
 
 ?>
-
+        <!-- -----------------------------register edit code ------------------------------>
 
       <form action="code.php" method="POST">
 
@@ -43,6 +43,14 @@ $row=mysqli_fetch_assoc($reault);
             <div class="form-group">
                 <label>Password</label>
                 <input type="text" name="password"  value="<?php echo $row['password']?>" class="form-control" placeholder="Enter Password">
+            </div>
+            <div class="form-group">
+                <label>usertype</label>
+                <select name="usertype" class="form-control"id="">
+                <option value="admin">admin</option>
+                <option value="user">user</option>
+                </select>
+
             </div>
             <div class="form-group">
                     

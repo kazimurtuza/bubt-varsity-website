@@ -14,9 +14,10 @@ if(isset($_REQUEST['registerbtn'])){
     $email= $_REQUEST['email'];
     $pass=$_REQUEST['password'];
     $cpass=$_REQUEST['confirmpassword'];
+    $usertype=$_REQUEST['usertype'];
    if($pass===$cpass)
     {
-     $que="INSERT INTO register1 (username,email,password) value('$name','$email','$pass')";
+     $que="INSERT INTO register1 (username,email,password,usertype) value('$name','$email','$pass','$usertype')";
      $res=mysqli_query($conn,$que);
     if($res){
           echo "inserted";
@@ -65,8 +66,9 @@ if(isset($_REQUEST['save']))
   $email=$_REQUEST['email'];
   $pass= $_REQUEST['password']."<br/>";
   $id= $_REQUEST['id'];
+  $usertype=$_REQUEST['usertype'];
 
-$queupdate="UPDATE register1 SET username='$uname', email='$email',password='$pass' where id= {$_REQUEST['id']}";
+$queupdate="UPDATE register1 SET username='$uname', email='$email',password='$pass', usertype='$usertype' where id= {$_REQUEST['id']}";
 $delete=mysqli_query($conn,$queupdate);
 if($delete)
 {

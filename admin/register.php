@@ -35,6 +35,15 @@ include('includes/navbar.php');
                 <label>Confirm Password</label>
                 <input type="password" name="confirmpassword" class="form-control" placeholder="Confirm Password">
             </div>
+            <div class="form-group">
+            <label>usertype</label>
+             <select name="usertype" class="form-control">
+               <option value="admin">admin</option>
+               <option value="user">user</option>
+              </select>
+                
+
+            </div>
         
         </div>
         <div class="modal-footer">
@@ -98,6 +107,7 @@ $result=mysqli_query($conn,$que);
             <th> Username </th>
             <th>Email </th>
             <th>Password</th>
+            <th>usertype</th>
             <th>EDIT </th>
             <th>DELETE </th>
           </tr>
@@ -112,7 +122,7 @@ $result=mysqli_query($conn,$que);
               $name=$row['username'];
               $email=$row['email'];
               $pass=$row['password'];
-        
+              $usertype=$row['usertype'];
       
      
           echo "<tr>";
@@ -120,6 +130,7 @@ $result=mysqli_query($conn,$que);
             echo "<td>".$name."</td>";
             echo "<td>".$email."</td>";
             echo "<td>".$pass ."</td>";
+            echo "<td>".$usertype ."</td>";
             echo '<td>
                 <form action="register_edit.php" method="post">
                     <input type="hidden" name="edit_id" value='.$row['id'].'>
