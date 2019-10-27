@@ -1,5 +1,5 @@
 <?php
-include('security.php');
+include('includes/security.php');
 include('includes/header.php'); 
 include('includes/navbar.php'); 
 
@@ -122,13 +122,13 @@ $result=mysqli_query($conn,$que);
             echo "<td>".$pass ."</td>";
             echo '<td>
                 <form action="register_edit.php" method="post">
-                    <input type="text" name="edit_id" value='.$row['id'].'>
+                    <input type="hidden" name="edit_id" value='.$row['id'].'>
                     <button  type="submit" name="edit_btn" class="btn btn-success"> EDIT</button>
                 </form>
             </td>';
             echo '<td>
                 <form action="code.php" method="post">
-                  <input type="text" name="delete_id" value='.$row['id'].'>
+                  <input type="hidden" name="delete_id" value='.$row['id'].'>
                   <button type="submit" name="delete_btn" class="btn btn-danger"> DELETE</button>
                 </form>
             </td>';
