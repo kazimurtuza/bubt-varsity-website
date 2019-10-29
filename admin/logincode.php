@@ -12,13 +12,18 @@ if(isset($_REQUEST['login_btn']))
     $quert="SELECT *FROM register1 WHERE email='$email' and password='$password'";
    
     $runque=mysqli_query($conn,$quert);
+    $row=mysqli_fetch_assoc($runque);
  
-    if(mysqli_fetch_assoc($runque))
+    if($row['usertype']=='admin')
     {
         $_SESSION['adminemail']=$email;
         header('location:index.php');
     }
-    else{
+    else if($row['usertype']=='user'){
+        $_SESSION['user']=$email;
+        header('location: ../index.php');
+    }
+    else {
         $_SESSION['status']="email or password is wrong";
         header('location:login.php');
     }

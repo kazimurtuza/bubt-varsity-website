@@ -1,11 +1,7 @@
 <?php 
 session_start();
 
-$src="localhost";
-$name="root";
-$pass="";
-$db="adminpanel";
-$conn=mysqli_connect($src,$name,$pass,$db);
+include('includes/security.php');
 
 // /////////////insert addmin in data base add set in session//////////////////
 

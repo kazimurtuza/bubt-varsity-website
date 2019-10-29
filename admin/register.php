@@ -90,7 +90,7 @@ include('includes/navbar.php');
 
 
 <?php 
-$conn=mysqli_connect("localhost","root","","adminpanel");
+
 $que="SELECT * FROM register1";
 $result=mysqli_query($conn,$que);
 

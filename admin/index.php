@@ -29,7 +29,7 @@ include('includes/navbar.php');
 
        <!-- ---------------total admin show ------------------------ -->
                <h4>Total Admin:  <?php 
-              $conn= mysqli_connect("localhost","root","","adminpanel");
+            
               $que="SELECT * from register1";
               $result=mysqli_query($conn,$que);
               $row=mysqli_num_rows($result);

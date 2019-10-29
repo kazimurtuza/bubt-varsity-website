@@ -1,0 +1,15 @@
+*,html,body{
+   margin: 0px;
+   padding: 0px;
+}
+
+
+header .logo{
+    height: 100px;
+}
+header ul{
+    list-style:none;
+}
+header ul li{
+    display:inline-block;
+}
