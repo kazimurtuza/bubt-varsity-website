@@ -3,23 +3,61 @@
  html,body{
      background-color:#333;
  }
+ a{
+    text-decoration: none;
+ }
+.logo{
+    font-size: 30px;   
+}
+ .logo h1{
+    color:yellow;
+}
+.logo span{
+   color:#c7ffd4;
+}
+
+.sidbar{
+    width: 500px; background: orange;position: fixed; z-index: 7; margin-top: 80px;display:none;
+}
+.sidbar li {
+    line-height: 50px;
+    list-style: none;
+    
+}
+.sidbar li {
+    line-height: 50px;
+    list-style: none;
+    
+}
+.tach li {
+    line-height: 50px;
+    list-style: none;
+    
+}
+.sidbar li a{
+    text-decoration: none;
+}
 
 
-.set-img{
-    background:url('../img/pic1.jpg') no-repeat center ;
-    background-size: cover;
-    min-height: 500px;
-    min-width:1200px;
+#home img{
+  
+    height: 500px;
+    width:1365px;
+    position: relative;
+    overflow: hidden;
 
 
 }
 .set-shadow{
-    background-color:rgba(0, 0, 0, 0.23);
-    min-height: 500px;
-    min-width:1200px;
+    position:absolute;
+    bottom: 0;
+    background-color:rgba(10, 10, 10, 0.239);
+    height:100%;
+    width:100%;
+
 }
 .dropdown-menu .ul{
-    background:yellow;
+    background:rgb(132, 0, 255);
 }
 .dropdown .dropdown-menu li{
     list-style: none;
@@ -40,15 +78,13 @@
 .dropdown .dropdown-menu li:hover{
    
     border-left:solid rgb(209, 1, 1) 2px;
-    background-color: rgb(135, 235, 185);
+    background-color: #9E9E9E;
 
 }
-.dropdown .dropdown-menu {
+
+.dropdown div {
  
-  background-color: skyblue;
+  background-color: #00000082;
+  border-radius: 4px;
   
-}
-.show{
-    position:absolute;
-    background:yellow;
 }

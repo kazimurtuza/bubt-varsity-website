@@ -1,18 +1,7 @@
 $(document).ready(function(){
 
-$("h1").hide();
-$(".btn").click(function(){
-    $(".ok").animate({
-      height:'toggle',
-      width:"toggle",
-},5000)
-})
-$('.id4').click(function()
-{
-    $('.id3').slideToggle(5000)
-})
-
-
+    // ///////navbar dropdown lest//////////
+    
 $('.showbtn').hover(function(){
 
     $('.show').slideToggle()
@@ -23,7 +12,26 @@ $('.showbtn').hover(function(){
         $(this).find('.dropdown-menu').stop(true).slideToggle()
         })
     
+$('.tach').hover(
+   function(){
+  $('.sidbar').stop(true,false,true).animate({
+     
+      height:'toggle',
+      width:'toggle',
+  })
+   }
 
+)
+$('.sidbar').hover(
+   function(){
+  $(this).stop(true,false,true).animate({
+     
+      height:'toggle',
+      width:'toggle',
+  })
+   }
+
+)
 
 
 })
