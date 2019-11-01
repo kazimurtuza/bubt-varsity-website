@@ -1,15 +1,54 @@
-*,html,body{
-   margin: 0px;
-   padding: 0px;
-}
+ 
+ /*variable create */
+ html,body{
+     background-color:#333;
+ }
 
 
-header .logo{
-    height: 100px;
+.set-img{
+    background:url('../img/pic1.jpg') no-repeat center ;
+    background-size: cover;
+    min-height: 500px;
+    min-width:1200px;
+
+
 }
-header ul{
-    list-style:none;
+.set-shadow{
+    background-color:rgba(0, 0, 0, 0.23);
+    min-height: 500px;
+    min-width:1200px;
 }
-header ul li{
-    display:inline-block;
+.dropdown-menu .ul{
+    background:yellow;
+}
+.dropdown .dropdown-menu li{
+    list-style: none;
+    display:block;
+   
+}
+.dropdown .dropdown-menu li a{
+  line-height: 30px;
+  padding-left:13px;
+  text-decoration: none;
+  color:white;
+}
+.dropdown .dropdown-menu ul {
+    padding:0px;
+    margin:0px;
+}
+
+.dropdown .dropdown-menu li:hover{
+   
+    border-left:solid rgb(209, 1, 1) 2px;
+    background-color: rgb(135, 235, 185);
+
+}
+.dropdown .dropdown-menu {
+ 
+  background-color: skyblue;
+  
+}
+.show{
+    position:absolute;
+    background:yellow;
 }
