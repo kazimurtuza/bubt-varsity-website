@@ -3,6 +3,18 @@
  html,body{
      background-color:#333;
  }
+ .onpicbtn{
+     overflow: hidden;
+         display:inline-block;
+ }
+ #picbtn li {
+    
+    line-height:10px;
+    padding:0px;
+ }
+ #picbtn{
+   
+ }
  a{
     text-decoration: none;
  }
@@ -88,3 +100,69 @@
   border-radius: 4px;
   
 }
+
+
+/* //////////post //////////////*/
+.post1{
+    background:rgb(9, 39, 59);
+  
+
+}
+.post2{
+    background:rgb(148, 125, 49);
+    display:none;
+
+}
+.post3{
+    background:rgb(59, 9, 34);
+    display:none;
+
+}
+.post1,.post2,.post3 .container{
+    max-height:200px;
+    color:rgb(224, 223, 223);
+    text-align: center;
+    padding: 30px;
+   
+}
+.area{
+    background:yellow;
+    height:0vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.triangle{
+    /* height: 200px;
+   width:200px;
+   background:red; */
+   margin: auto;
+   border-top: 50px solid rgb(53, 50, 50);
+   border-left: -12px solid  transparent;
+   border-right: 35px solid transparent;
+   border-bottom: -6px solid transparent;
+   position: absolute;
+   position: fixed;
+   bottom:533px;
+   right: 390px;
+   z-index: 9;
+}
+.triangle2{
+    /* height: 200px;
+   width:200px;
+   background:red; */
+   margin: auto;
+   border-top: 50px solid rgb(53, 50, 50);
+   border-left: -12px solid  transparent;
+   border-right: 35px solid transparent;
+   border-bottom: -6px solid transparent;
+  transform:rotateY(180deg);
+   position: absolute;
+   position: fixed;
+   bottom:533px;
+   left: 390px;
+   z-index: 9;
+}
+
