@@ -39,7 +39,7 @@ include('includes/navbar.php');
       <div class="container">
           <div class="row">
               <div class="col-md-5  mr" >
-              <form action="" method="POST">
+              <form action="../webpages/index.php" method="POST">
           <div class="form-group">
     <label for="">Announce in head:</label>
           <textarea name="bangla" id="com" cols="30" class="form-control " rows="4">Announce
