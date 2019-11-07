@@ -2,6 +2,7 @@
 
 <?php 
 session_start();
+
 if(isset($_REQUEST['login_btn']))
 {
       $conn=mysqli_connect("localhost","root","","adminpanel");
@@ -13,6 +14,7 @@ if(isset($_REQUEST['login_btn']))
    
     $runque=mysqli_query($conn,$quert);
     $row=mysqli_fetch_assoc($runque);
+    echo "usertype".$row['usertype'];
  
     if($row['usertype']=='admin')
     {
@@ -25,7 +27,7 @@ if(isset($_REQUEST['login_btn']))
     }
     else {
         $_SESSION['status']="email or password is wrong";
-        header('location:login.php');
+         header('location:login.php');
     }
     
 
